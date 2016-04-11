@@ -1,0 +1,24 @@
+
+<div class="container-fluid" ng ng-controller="carrierListController">
+    <span><h2>Total Carrier/Service count {{ data.count }}</h2></span>
+    <table class="table">
+        <thead class="thead-inverse">
+        <tr>
+            <th>ID</th>
+            <th>title</th>
+            <th>cube</th>
+            <th>service</th>
+            <th>zone_from</th>
+            <th>zone_to</th>
+        </tr>
+        </thead>
+        <tr ng-repeat="carrier in data.results">
+            <th scope="row">{{$index + 1}}</th>
+            <td>{{ carrier.title }}</td>
+            <td>{{ carrier.cube }}</td>
+            <td>{{ carrier.service }}</td>
+            <td>{{ carrier.zone_from }}</td>
+            <td>{{ carrier.zone_to }}</td>
+        </tr>
+    </table>
+</div>

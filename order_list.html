@@ -1,0 +1,34 @@
+
+    <div class="container-fluid" ng ng-controller="orderListController">
+        <span><h2>Total orders count {{ data.count }}</h2></span>
+        <table class="table">
+            <thead class="thead-inverse">
+            <tr>
+                <th>ID</th>
+                <th>sku</th>
+                <th>sku_description</th>
+                <th>length</th>
+                <th>width</th>
+                <th>height</th>
+                <th>weight</th>
+                <th>status</th>
+                <th>sd_zone</th>
+                <th>rc_zone</th>
+                <th>price</th>
+            </tr>
+            </thead>
+            <tr ng-repeat="order in data.results">
+                <th scope="row">{{$index + 1}}</th>
+                <td>{{ order.sku }}</td>
+                <td>{{ order.sku_description }}</td>
+                <td>{{ order.length }}</td>
+                <td>{{ order.width }}</td>
+                <td>{{ order.height }}</td>
+                <td>{{ order.weight }}</td>
+                <td>{{ order.status }}</td>
+                <td>{{ order.sd_zone.title }}</td>
+                <td>{{ order.rc_zone.title }}</td>
+                <td>{{ order.price }}</td>
+            </tr>
+        </table>
+    </div>

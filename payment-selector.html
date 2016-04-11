@@ -1,0 +1,25 @@
+<div class="container-fluid" ng ng-controller="paymentSelectorController">
+    <table class="table">
+        <thead class="thead-inverse">
+        <tr>
+            <th>sku</th>
+            <th>sku_description</th>
+            <th>carrier</th>
+            <th>service</th>
+            <th>sd_zone</th>
+            <th>rc_zone</th>
+            <th>price</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>{{ data.sku }}</td>
+            <td>{{ data.sku_description }}</td>
+            <td>{{ data.carrier_service.title }}</td>
+            <td>{{ data.carrier_service.service }}</td>
+            <td>{{ data.sd_zone.title }}</td>
+            <td>{{ data.rc_zone.title }}</td>
+            <td>{{ data.price }}</td>
+        </tr>
+    </table>
+    <button type="submit" ng-click="save()" class="btn btn-default">Add Order(FOR TEST)</button>
+</div>

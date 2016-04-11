@@ -1,0 +1,79 @@
+<div class="container-fluid" ng ng-controller="ratesListController">
+    <span><h2>Total Rates count {{ data.count }}</h2></span>
+    <table class="table">
+        <thead class="thead-inverse">
+        <tr>
+            <th>ID</th>
+            <th>calculation_method</th>
+            <th>rating_id</th>
+            <th>id_type</th>
+            <th>carrier_service</th>
+            <th>cube</th>
+            <th>service</th>
+            <th>zone_from</th>
+            <th>zone_to</th>
+            <th>fuel_surcharge</th>
+            <th>surcharge_other_perc</th>
+            <th>surcharge_flat</th>
+            <th>tax_rate</th>
+            <th>minimum</th>
+            <th>break1_start</th>
+            <th>break1_end</th>
+            <th>basic1</th>
+            <th>kilo1</th>
+            <th>break2_start</th>
+            <th>break2_end</th>
+            <th>basic2</th>
+            <th>kilo2</th>
+            <th>break3_start</th>
+            <th>break3_end</th>
+            <th>basic3</th>
+            <th>kilo3</th>
+            <th>break4_start</th>
+            <th>break4_end</th>
+            <th>basic4</th>
+            <th>kilo4</th>
+            <th>break5_start</th>
+            <th>break5_end</th>
+            <th>basic5</th>
+            <th>kilo5</th>
+        </tr>
+        </thead>
+        <tr ng-repeat="rate in data.results">
+            <th scope="row">{{$index + 1}}</th>
+            <td>{{ rate.calculation_method }}</td>
+            <td>{{ rate.rating_id.rating_id }}</td>
+            <td>{{ rate.id_type.id_type }}</td>
+            <td>{{ rate.carrier_service.title }}</td>
+            <td>{{ rate.carrier_service.cube }}</td>
+            <td>{{ rate.carrier_service.service }}</td>
+            <td>{{ rate.carrier_service.zone_from }}</td>
+            <td>{{ rate.carrier_service.zone_to }}</td>
+            <td>{{ rate.fuel_surcharge }}</td>
+            <td>{{ rate.surcharge_other_perc }}</td>
+            <td>{{ rate.surcharge_flat }}</td>
+            <td>{{ rate.tax_rate }}</td>
+            <td>{{ rate.minimum }}</td>
+            <td>{{ rate.break1_start }}</td>
+            <td>{{ rate.break1_end }}</td>
+            <td>{{ rate.basic1 }}</td>
+            <td>{{ rate.kilo1 }}</td>
+            <td>{{ rate.break2_start }}</td>
+            <td>{{ rate.break2_end }}</td>
+            <td>{{ rate.basic2 }}</td>
+            <td>{{ rate.kilo2 }}</td>
+            <td>{{ rate.break3_start }}</td>
+            <td>{{ rate.break3_end }}</td>
+            <td>{{ rate.basic3 }}</td>
+            <td>{{ rate.kilo3 }}</td>
+            <td>{{ rate.break4_start }}</td>
+            <td>{{ rate.break4_end }}</td>
+            <td>{{ rate.basic4 }}</td>
+            <td>{{ rate.kilo4 }}</td>
+            <td>{{ rate.break5_start }}</td>
+            <td>{{ rate.break5_end }}</td>
+            <td>{{ rate.basic5 }}</td>
+            <td>{{ rate.kilo5 }}</td>
+        </tr>
+    </table>
+</div>

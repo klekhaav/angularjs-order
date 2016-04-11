@@ -1,0 +1,43 @@
+<div class="container-fluid" ng ng-controller="selectCarrierController">
+    <span><h2>Select Carrier</h2></span>
+    {{order}}
+    <br>
+    <br>
+    {{rates}}
+    <div ng-if="rates.count > 0 && cubes <= rates.results[0].carrier_service.cube && cubic_weight <= rates.results[0].break1_end">
+        <h3>You have {{ rates.count }} variants</h3>
+        <div ng-if="cubic_weight <= rates.results[0].break1_end">
+            <table class="table">
+                <thead class="thead-inverse">
+                <tr>
+                    <th></th>
+                    <th>title</th>
+                    <th>service</th>
+                    <th>price</th>
+                </tr>
+                </thead>
+
+                <tr ng-repeat="carrier in rates.results" ng-click="save(carrier);">
+                    <th scope="row">{{$index + 1}}</th>
+                    <td>{{ carrier.carrier_service.title }}</td>
+                    <td>{{ carrier.carrier_service.service }}</td>
+                    <td>{{ carrier.price }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="alert alert-danger fade in" ng-if="cubes > rates.results[0].carrier_service.cube">
+        <a href="/" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>So Big!</strong> Sorry you order too much for us
+    </div>
+    <div class="alert alert-danger fade in" ng-if="cubic_weight > rates.results[0].break1_end">
+        <a href="/" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Overweight!</strong> Sorry you order too much for us
+    </div>
+    <div class="alert alert-danger fade in" ng-if="rates.count == 0">
+        <a href="/" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Sorry</strong> There is no carrier
+    </div>
+</div>
+
+

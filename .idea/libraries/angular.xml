@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="angular" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="jQuery" />
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/js/underscore.js" />
+      <root url="file://$PROJECT_DIR$/js/angular-resource.min.js" />
+      <root url="file://$PROJECT_DIR$/js/angular.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

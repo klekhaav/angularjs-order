@@ -1,0 +1,38 @@
+<!DOCTYPE html5>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-resource.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+
+    <script src="js/orderApp.js"></script>
+
+</head>
+<body ng-app="orderApp" ng-app>
+    <header>
+        <div class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand"><span class="glyphicon glyphicon-book"></span>Order</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/carrier-list">Carrier/Service List</a></li>
+                    <li><a href="/order-list">Order List</a></li>
+                    <li><a href="/rates-list">Rates List</a></li>
+                    <li><a href="/add-order">Add New Order</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div ng-view></div>
+    </main>
+</body>
+
+</html>

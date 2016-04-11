@@ -1,0 +1,156 @@
+<div class="container-fluid" ng-controller="addOrderController">
+    <span><h2>Add new Order </h2></span>
+    <form role="form" novalidate class="form-horizontal">
+
+        <div class="form-group">
+            <label for="sku" class="col-sm-2 control-label">SKU:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control"
+                       id="sku" ng-model="form.sku" value="Please enter correct SKU number">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="sku_description" class="col-sm-2 control-label">SKU Description:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="sku_description" ng-model="form.sku_description">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <lable class="col-sm-2 control-label"><b>Parameters:</b></lable>
+            <label for="length" class="col-sm-1 control-label">length (cm):</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="length" ng-model="form.length">
+            </div>
+
+            <label for="width" class="col-sm-1 control-label">width (cm):</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="width" ng-model="form.width">
+            </div>
+
+            <label for="height" class="col-sm-2 control-label">height (cm):</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="height" ng-model="form.height">
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <lable class="col-sm-2 control-label"><b>Weight parameters:</b></lable>
+            <label for="weight" class="col-sm-1 control-label">weight (kg):</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="weight" ng-model="form.weight">
+            </div>
+
+            <label for="cubes" class="col-sm-1 control-label">cubes:</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="cubes"
+                       placeholder="{{ form.length / 100 * form.width / 100 * form.height /100 }}" readonly>
+            </div>
+
+            <label for="cubic_weight" class="col-sm-2 control-label">Cubic weight:</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="cubic_weight"
+                       placeholder="{{ form.length / 100 * form.width / 100 * form.height / 100  * form.weight}}" readonly>
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-6">
+                <b>Sender Info:</b>
+            </div>
+            <div class="col-sm-6">
+                <b>Receiver Info:</b>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <label for="sd_zone" class="col-sm-2 control-label">Suburb/Title:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="sd_zone" ng-model="form.sd_zone.title">
+                </div>
+            </div>
+            <div>
+                <label for="rc_zone" class="col-sm-2 control-label">Suburb/Title:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="rc_zone" ng-model="form.rc_zone.title">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <label for="sd_state" class="col-sm-2 control-label">State:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="sd_state" ng-model="form.sd_zone.state">
+                </div>
+            </div>
+            <div>
+                <label for="rc_state" class="col-sm-2 control-label">State:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="rc_state" ng-model="form.rc_zone.state">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <label for="sd_postcode" class="col-sm-2 control-label">Postcode:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="sd_postcode" ng-model="form.sd_zone.postcode">
+                </div>
+            </div>
+            <div>
+                <label for="rc_postcode" class="col-sm-2 control-label">Postcode:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="rc_postcode" ng-model="form.rc_zone.postcode">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <label for="sd_country" class="col-sm-2 control-label">Country:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="sd_country" ng-model="form.sd_zone.country">
+                </div>
+            </div>
+            <div>
+                <label for="rc_country" class="col-sm-2 control-label">Country:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="rc_country" ng-model="form.rc_zone.country">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <label for="sd_residence_type" class="col-sm-2 control-label"> Residence type: </label>
+                <div class="col-sm-4">
+                    <select name="singleSelect" class="form-control"
+                            id="sd_residence_type" ng-model="form.sd_residence_type">
+                        <option value="option-1">Business</option>
+                        <option value="option-2">Personal</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="rc_residence_type" class="col-sm-2 control-label"> Residence type: </label>
+                <div class="col-sm-4">
+                    <select name="singleSelect" class="form-control"
+                            id="rc_residence_type" ng-model="form.rc_residence_type">
+                        <option value="option-1">Business</option>
+                        <option value="option-2">Personal</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" ng-click="save()" class="btn btn-default">Add New Order</button>
+
+    </form>
+
+</div>
