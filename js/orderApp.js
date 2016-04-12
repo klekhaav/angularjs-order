@@ -76,7 +76,7 @@ orderApp.service('dataService', function($http) {
         });
     };
 
-    this.getPrice = function (callbackFunc) {
+    this.getRates = function (callbackFunc) {
         $http({
             method: 'GET',
             url: 'http://localhost:8000/shipping/rates_table/'
