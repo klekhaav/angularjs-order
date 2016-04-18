@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ad183ed-632d-421a-ac7f-3d4ad32b2384" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cp_form.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/orderApp.js" afterPath="$PROJECT_DIR$/js/orderApp.js" />
     </list>
     <ignored path="angularjs.iws" />
@@ -27,8 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+            <state relative-caret-position="468">
+              <caret line="26" column="60" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -47,18 +49,18 @@
       <file leaf-file-name="carrier_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/carrier_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="13" selection-start-line="1" selection-start-column="0" selection-end-line="23" selection-end-column="6" />
+            <state relative-caret-position="432">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rates_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rates_list.html">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+            <state relative-caret-position="72">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -67,37 +69,9 @@
       <file leaf-file-name="add_order.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add_order.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2718">
-              <caret line="151" column="46" selection-start-line="151" selection-start-column="8" selection-end-line="151" selection-end-column="94" />
+            <state relative-caret-position="1704">
+              <caret line="140" column="97" selection-start-line="140" selection-start-column="16" selection-end-line="140" selection-end-column="103" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="select-carrier.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/select-carrier.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="orderApp.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/orderApp.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="86" column="11" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
-              <folding>
-                <element signature="e#2853#4167#0" expanded="false" />
-                <element signature="e#4227#4274#0" expanded="false" />
-                <element signature="e#4353#4454#0" expanded="false" />
-                <element signature="e#4531#4630#0" expanded="false" />
-                <element signature="e#4894#6076#0" expanded="false" />
-                <element signature="e#6170#9328#0" expanded="false" />
-                <element signature="e#9422#9876#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -118,6 +92,36 @@
             <state relative-caret-position="36">
               <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cp_form.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cp_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+              <folding>
+                <element signature="n#style#0;n#h4#0;n#div#0;n#div#3;n#form#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#0;n#div#4;n#form#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#1;n#div#4;n#form#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="orderApp.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/orderApp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="349" column="37" selection-start-line="349" selection-start-column="37" selection-end-line="349" selection-end-column="37" />
+              <folding>
+                <element signature="e#5444#5491#0" expanded="false" />
+                <element signature="e#5570#5671#0" expanded="false" />
+                <element signature="e#5925#6023#0" expanded="false" />
+                <element signature="e#11870#12324#0" expanded="false" />
+                <marker date="1461005312606" expanded="true" signature="14335:14601" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,11 +168,12 @@
         <option value="$PROJECT_DIR$/order_list.html" />
         <option value="$PROJECT_DIR$/carrier_list.html" />
         <option value="$PROJECT_DIR$/rates_list.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/add_order.html" />
         <option value="$PROJECT_DIR$/select-carrier.html" />
         <option value="$PROJECT_DIR$/payment-selector.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/cp_form.html" />
         <option value="$PROJECT_DIR$/js/orderApp.js" />
       </list>
     </option>
@@ -487,11 +492,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.rates_list.html">
+  <component name="RunManager" selected="JavaScript Debug.cp_form.html">
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/angularjs/index.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="order_list.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/angularjs/order_list.html">
       <method />
     </configuration>
     <configuration default="false" name="index.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/angularjs/index.html">
@@ -501,6 +503,9 @@
       <method />
     </configuration>
     <configuration default="false" name="rates_list.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/angularjs/rates_list.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="cp_form.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/angularjs/cp_form.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -558,18 +563,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.order_list.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.carrier_list.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.rates_list.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.carrier_list.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.rates_list.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.cp_form.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.rates_list.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.cp_form.html" />
         <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.carrier_list.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.order_list.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.rates_list.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.carrier_list.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -595,25 +600,25 @@
       <workItem from="1460114527837" duration="3265000" />
       <workItem from="1460130673536" duration="1217000" />
       <workItem from="1460184543729" duration="50266000" />
-      <workItem from="1460350502976" duration="1930000" />
+      <workItem from="1460350502976" duration="61237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188234000" />
+    <option name="totallyTimeSpent" value="247541000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="24" width="1871" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25260273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13753425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3090129" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -666,19 +671,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/carrier_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rates_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
@@ -708,13 +705,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2853#4167#0" expanded="false" />
-            <element signature="e#4227#4274#0" expanded="false" />
-            <element signature="e#4353#4454#0" expanded="false" />
-            <element signature="e#4531#4630#0" expanded="false" />
-            <element signature="e#4894#6076#0" expanded="false" />
-            <element signature="e#6170#9328#0" expanded="false" />
-            <element signature="e#9422#9876#0" expanded="false" />
+            <element signature="e#5444#5491#0" expanded="false" />
+            <element signature="e#5570#5671#0" expanded="false" />
+            <element signature="e#5925#6023#0" expanded="false" />
+            <element signature="e#11870#12324#0" expanded="false" />
+            <marker date="1461005312606" expanded="true" signature="14335:14601" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -772,13 +767,11 @@
         <state relative-caret-position="3024">
           <caret line="211" column="16" selection-start-line="211" selection-start-column="16" selection-end-line="211" selection-end-column="16" />
           <folding>
-            <element signature="e#2853#4167#0" expanded="false" />
-            <element signature="e#4227#4274#0" expanded="false" />
-            <element signature="e#4353#4454#0" expanded="false" />
-            <element signature="e#4531#4630#0" expanded="false" />
-            <element signature="e#4894#6076#0" expanded="false" />
-            <element signature="e#6170#9328#0" expanded="false" />
-            <element signature="e#9422#9876#0" expanded="false" />
+            <element signature="e#5444#5491#0" expanded="false" />
+            <element signature="e#5570#5671#0" expanded="false" />
+            <element signature="e#5925#6023#0" expanded="false" />
+            <element signature="e#11870#12324#0" expanded="false" />
+            <marker date="1461005312606" expanded="true" signature="14335:14601" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -839,13 +832,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2853#4167#0" expanded="false" />
-            <element signature="e#4227#4274#0" expanded="false" />
-            <element signature="e#4353#4454#0" expanded="false" />
-            <element signature="e#4531#4630#0" expanded="false" />
-            <element signature="e#4894#6076#0" expanded="false" />
-            <element signature="e#6170#9328#0" expanded="false" />
-            <element signature="e#9422#9876#0" expanded="false" />
+            <element signature="e#5444#5491#0" expanded="false" />
+            <element signature="e#5570#5671#0" expanded="false" />
+            <element signature="e#5925#6023#0" expanded="false" />
+            <element signature="e#11870#12324#0" expanded="false" />
+            <marker date="1461005312606" expanded="true" signature="14335:14601" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -896,71 +887,24 @@
     <entry file="file://$PROJECT_DIR$/garmoncheg/userChat/public/app/views/pages/home.html" />
     <entry file="file://$PROJECT_DIR$/greatings.html" />
     <entry file="file://$PROJECT_DIR$/garmoncheg/userChat/public/app/app.router.js" />
-    <entry file="file://$PROJECT_DIR$/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/garmoncheg/userChat/public/app/directives/reverse.js" />
     <entry file="file://$PROJECT_DIR$/garmoncheg/userChat/public/app/controllers/userCtrl.js" />
     <entry file="file://$PROJECT_DIR$/garmoncheg/userChat/public/app/controllers/mainCtrl.js" />
     <entry file="file://$PROJECT_DIR$/garmoncheg/userChat/public/app/services/userService.js" />
     <entry file="file://$PROJECT_DIR$/garmoncheg/userChat/public/app/app.js" />
     <entry file="file://$PROJECT_DIR$/garmoncheg/userChat/public/app/views/index.html" />
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/add_order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2718">
-          <caret line="151" column="46" selection-start-line="151" selection-start-column="8" selection-end-line="151" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carrier_list.html">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="1" selection-start-column="0" selection-end-line="23" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/select-carrier.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/payment-selector.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        <state relative-caret-position="270">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -973,18 +917,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/carrier_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="60" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1704">
+          <caret line="140" column="97" selection-start-line="140" selection-start-column="16" selection-end-line="140" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/payment-selector.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cp_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#3;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#4;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#1;n#div#4;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/orderApp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="86" column="11" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
+        <state relative-caret-position="236">
+          <caret line="349" column="37" selection-start-line="349" selection-start-column="37" selection-end-line="349" selection-end-column="37" />
           <folding>
-            <element signature="e#2853#4167#0" expanded="false" />
-            <element signature="e#4227#4274#0" expanded="false" />
-            <element signature="e#4353#4454#0" expanded="false" />
-            <element signature="e#4531#4630#0" expanded="false" />
-            <element signature="e#4894#6076#0" expanded="false" />
-            <element signature="e#6170#9328#0" expanded="false" />
-            <element signature="e#9422#9876#0" expanded="false" />
+            <element signature="e#5444#5491#0" expanded="false" />
+            <element signature="e#5570#5671#0" expanded="false" />
+            <element signature="e#5925#6023#0" expanded="false" />
+            <element signature="e#11870#12324#0" expanded="false" />
+            <marker date="1461005312606" expanded="true" signature="14335:14601" placeholder="..." />
           </folding>
         </state>
       </provider>

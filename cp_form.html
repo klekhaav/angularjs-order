@@ -1,0 +1,198 @@
+<div class="container-fluid" ng-controller="cpSpecificationController">
+
+    <span><h2>Order specification </h2></span>
+    <br />
+    {{order}}
+    <br />
+    Response: {{response}}
+    <br />
+    Error: {{error}}
+    <br />
+    {{form.alt}}
+
+    <form role="form" novalidate class="form-horizontal">
+        <div class="form-group">
+            <label for="items" class="col-sm-1 control-label">Items:</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="items"
+                       placeholder="1" readonly>
+            </div>
+            <label for="weight" class="col-sm-1 control-label">Weight:</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="weight"
+                       placeholder="{{order.weight}}" readonly>
+            </div>
+            <label for="volume" class="col-sm-1 control-label">Volume:</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="volume"
+                       placeholder="{{ order.length / 100 * order.width / 100 * order.height /100 }}" readonly>
+            </div>
+            <label for="pricecode" class="col-sm-1 control-label">Price code:</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="pricecode" ng-model="form.pricecode">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="labels" class="col-sm-3 control-label">Labels:</label>
+            <div class="col-sm-3">
+                <select name="singleSelect" class="form-control"
+                        id="labels" ng-model="form.labels">
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                </select>
+            </div>
+            <lable for="alt" class="col-sm-3 control-label"><b>Authority to Leave Flag:</b></lable>
+            <div class="col-sm-3">
+                <select name="singleSelect" class="form-control"
+                        id="alt" ng-model="form.alt">
+                    <option value="1">Okay to Leave</option>
+                    <option value="0">Signature required</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="reference" class="col-sm-3 control-label">Reference:</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="reference" ng-model="form.reference">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-12">
+                <h4 style="text-align: center"><b>Delivery information</b></h4>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-6">
+                <h4 style="text-align: center"><b>Pickup</b></h4>
+            </div>
+            <div class="col-sm-6">
+                <h4 style="text-align: center"><b>Delivery</b></h4>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="p-addr0" class="col-sm-2 control-label">Sender Name:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control"
+                       id="p-addr0" ng-model="form.paddr0" value="Please enter sender name">
+            </div>
+            <label for="d-addr0" class="col-sm-2 control-label">Receiver Name:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control"
+                       id="d-addr0" ng-model="form.daddr0" value="Please enter receiver name">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="p-addr1" class="col-sm-2 control-label">Address line 1:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control"
+                       id="p-addr1" ng-model="form.paddr1" value="Please enter address">
+            </div>
+            <label for="d-addr1" class="col-sm-2 control-label">Address line 1:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control"
+                       id="d-addr1" ng-model="form.daddr1" value="Please enter address">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="p-addr2" class="col-sm-2 control-label">Address line 2:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control"
+                       id="p-addr2" ng-model="form.paddr2" value="Please enter address">
+            </div>
+            <label for="d-addr2" class="col-sm-2 control-label">Address line 2:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control"
+                       id="d-addr2" ng-model="form.daddr2" value="Please enter address">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="p-addr3" class="col-sm-2 control-label">Address line 3:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control"
+                       id="p-addr3" ng-model="form.paddr3" value="Please enter address">
+            </div>
+            <label for="d-addr3" class="col-sm-2 control-label">Address line 3:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control"
+                       id="d-addr3" ng-model="form.daddr3" value="Please enter address">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="p-suburb" class="col-sm-2 control-label">Suburb/Town/City:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="p-suburb"
+                       placeholder="{{ order.sd_zone.title }}" readonly>
+            </div>
+            <label for="d-suburb" class="col-sm-2 control-label">Suburb/Town/City:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="d-suburb"
+                       placeholder="{{ order.rc_zone.title }}" readonly>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="p-postcode" class="col-sm-2 control-label">Postcode:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="p-postcode"
+                       placeholder="{{ order.sd_zone.postcode }}" readonly>
+            </div>
+            <label for="d-postcode" class="col-sm-2 control-label">Postcode:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="d-postcode"
+                       placeholder="{{ order.rc_zone.postcode }}" readonly>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="p-contact" class="col-sm-2 control-label">Sender Contact:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control"
+                       id="p-contact" ng-model="form.pcontact" value="Please enter contact">
+            </div>
+            <label for="d-contact" class="col-sm-2 control-label">Receiver Contact:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control"
+                       id="d-contact" ng-model="form.dcontact" value="Please enter contact">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="p-phone" class="col-sm-2 control-label">Sender Phone Number:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control"
+                       id="p-phone" ng-model="form.pphone" value="Please enter phone">
+            </div>
+            <label for="d-phone" class="col-sm-2 control-label">Receiver Phone Number:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control"
+                       id="d-phone" ng-model="form.dphone" value="Please enter phone">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="p-email" class="col-sm-2 control-label">Sender Email:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control"
+                       id="p-email" ng-model="form.pemail" value="Please enter email">
+            </div>
+            <label for="d-email" class="col-sm-2 control-label">Receiver Email:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control"
+                       id="d-email" ng-model="form.demail" value="Please enter email">
+            </div>
+        </div>
+
+        <button type="submit" ng-click="save()" class="btn btn-default">Add New Order</button>
+
+    </form>
+
+</div>

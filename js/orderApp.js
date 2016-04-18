@@ -2,6 +2,8 @@ var orderApp = angular.module('orderApp', ['ngResource', 'ngRoute']);
 
 orderApp.config(['$routeProvider' , '$locationProvider', '$httpProvider',
     function($routeProvider, $locationProvider, $httpProvider) {
+        $httpProvider.defaults.useXDomain = true;
+        $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
         $httpProvider.defaults.timeout = 5000;
         $locationProvider.html5Mode(true);
         $routeProvider
@@ -31,13 +33,18 @@ orderApp.config(['$routeProvider' , '$locationProvider', '$httpProvider',
             })
 
             .when('/select-carrier', {
-            templateUrl: 'select-carrier.html',
-            controller: 'selectCarrierController'
+                templateUrl: 'select-carrier.html',
+                controller: 'selectCarrierController'
+            })
+
+            .when('/cp-form', {
+                templateUrl: 'cp_form.html',
+                controller: 'selectCarrierController'
             })
 
             .when('/payment-selector',{
-            templateUrl: 'payment-selector.html',
-            controller: 'paymentSelectorController'
+                templateUrl: 'payment-selector.html',
+                controller: 'paymentSelectorController'
             });
 
         $locationProvider.html5Mode({
@@ -51,7 +58,7 @@ orderApp.service('dataService', function($http) {
 
     delete $http.defaults.headers.common['X-Requested-With'];
 
-    this.getOrders = function (callbackFunc) {
+    this.getOrders = function (callbackFunc, order) {
         $http({
             method: 'GET',
             url: 'http://localhost:8000/shipping/order/'//,
@@ -90,40 +97,43 @@ orderApp.service('dataService', function($http) {
 
 orderApp.service("order", function Order() {
     var order = this;
+
     order.data = {
         "customer_rating_id": {
             "id_type": "Pub",
             "rating_id": "1"
         },
-        "sku": "0",
-        "sku_description": "0",
-        "length": 0.0,
-        "width": 0.0,
-        "height": 0.0,
-        "weight": 0.0,
-        "status": "0",
-        "sd_unit_apartment": "0",
-        "sd_street_number": "0",
-        "sd_street_name": "0",
+        "sku": "0000",
+        "sku_description": "0000",
+        "length": 100.0,
+        "width": 100.0,
+        "height": 100.0,
+        "weight": 10.0,
+        "status": "1",
+        "sd_addr0": "10",
+        "sd_addr1": "10",
+        "sd_addr2": "10",
+        "sd_addr3": "10",
         "sd_zone": {
             "title": "Melbourne Metro",
-            "state": "Victoria",
-            "country": "Australia",
+            "state": null,
+            "country": null,
             "postcode": "3040",
             "zone": "MEL"
         },
-        "sd_residence_type": "P",
-        "rc_unit_apartment": "0",
-        "rc_street_number": "0",
-        "rc_street_name": "0",
+        "sd_residence_type": "B",
+        "rc_addr0": "10",
+        "rc_addr1": "10",
+        "rc_addr2": "10",
+        "rc_addr3": "10",
         "rc_zone": {
-            "title": "Melbourne Metro",
-            "state": "Victoria",
-            "country": "Australia",
-            "postcode": "3040",
-            "zone": "MEL"
+            "title": "Sydney Metro",
+            "state": null,
+            "country": null,
+            "postcode": "2000",
+            "zone": "SYD"
         },
-        "rc_residence_type": "P",
+        "rc_residence_type": "B",
         "shipping_type": "D",
         "carrier_service": {
             "title": "Couriers Please",
@@ -134,8 +144,7 @@ orderApp.service("order", function Order() {
             "zone_to": "SYD",
             "zone_to_postcode": "2000"
         },
-        "price": 0.0
-
+        "price": 100.0
     }
 });
 
@@ -174,6 +183,7 @@ orderApp.controller('addOrderController', function($scope, order, $location, $ht
         order.data.weight = $scope.form.weight;
         order.data.status = "New";
         order.data.sd_zone.title = $scope.form.sd_zone.title;
+        order.data.sd_zone.state = $scope.form.sd_zone.state;
         order.data.sd_zone.country = $scope.form.sd_zone.country;
         order.data.sd_zone.postcode = $scope.form.sd_zone.postcode;
         if ($scope.form.sd_residence_type = "Business") order.data.sd_residence_type = "B";
@@ -181,8 +191,33 @@ orderApp.controller('addOrderController', function($scope, order, $location, $ht
         if ($scope.form.rc_residence_type = "Business") order.data.rc_residence_type = "B";
         if ($scope.form.rc_residence_type = "Personal") order.data.rc_residence_type = "P";
         order.data.rc_zone.title = $scope.form.rc_zone.title;
+        order.data.rc_zone.state = $scope.form.rc_zone.state;
         order.data.rc_zone.country = $scope.form.rc_zone.country;
         order.data.rc_zone.postcode = $scope.form.rc_zone.postcode;
+
+        $http({
+            method: "GET",
+            url: 'http://localhost:8000/shipping/locality/?coutry=' + order.data.sd_zone.country +
+            '&state=' + order.data.sd_zone.state +
+            '&postcode=' + order.data.sd_zone.postcode +
+            '&title=' + order.data.sd_zone.title
+        }).success(function (data) {
+            order.data.sd_zone.zone = data.results[0].zone;
+        }).error(function () {
+            alert("There is no Sender locality zone");
+        });
+
+        $http({
+            method: "GET",
+            url: 'http://localhost:8000/shipping/locality/?coutry=' + order.data.rc_zone.country +
+            '&state=' + order.data.rc_zone.state +
+            '&postcode=' + order.data.rc_zone.postcode +
+            '&title=' + order.data.rc_zone.title
+        }).success(function (data) {
+            order.data.rc_zone.zone = data.results[0].zone;
+        }).error(function () {
+            alert("There is no Receiver locality zone");
+        });
 
         $location.path('/select-carrier');
 
@@ -242,7 +277,9 @@ orderApp.controller('selectCarrierController', function ($scope, order, $http, $
         order.data.carrier_service.zone_to_postcode = carrier.carrier_service.zone_to_postcode;
         order.data.price = carrier.price;
 
-        $location.path('/payment-selector');
+        if (order.data.carrier_service.title == "Couriers Please"){
+            $location.path('/cp-form');
+        } else $location.path('/payment-selector');
 
     };
 });
@@ -266,4 +303,57 @@ orderApp.controller("paymentSelectorController", function(order, $scope, $http, 
         $location.path('/order-list');
         
     }
+});
+
+orderApp.controller("cpSpecificationController", function($scope, $http, order){
+
+    $scope.order = order.data;
+
+    var key = "fmncelkj98";
+    var items = 1;
+    var volume = $scope.order.length / 100 * $scope.order.height / 100 * $scope.order.width / 100;
+
+    $scope.save = function() {
+
+        $http({
+            url: 'http://edi.couriersplease.com.au/api/consignment/',
+            method: 'POST',
+            data:
+            '<cpl key="' + key + '" ' + 'output="json">' +
+            '<consignment items="' + items + '" ' +
+                'weight="' + $scope.order.weight + '" ' +
+                'volume="' + volume + '" ' +
+                'pricecode="' + $scope.form.pricecode + '" ' +
+                'labels="' + $scope.form.labels + '" ' +
+                'atl="' + $scope.form.alt + '" >' +
+            '<reference reference="' + $scope.form.reference + '"/>' +
+            '<pickup addr0="' + $scope.form.paddr0 + '" ' +
+                'addr1="' + $scope.form.paddr1 + '" ' +
+                'addr2="' + $scope.form.paddr2 + '" ' +
+                'addr3="' + $scope.form.paddr3 + '" ' +
+                'suburb="' + $scope.order.sd_zone.title + '" ' +
+                'postcode="' + $scope.order.sd_zone.postcode + '" ' +
+                'contact="' + $scope.form.pcontact + '" ' +
+                'email="' + $scope.form.pemail + '" ' +
+                'phone="' + $scope.form.pphone + '"/>' +
+            '<delivery addr0="' + $scope.form.daddr0 + '" ' +
+                'addr1="' + $scope.form.daddr1 + '" ' +
+                'addr2="' + $scope.form.daddr2 + '" ' +
+                'addr3="' + $scope.form.daddr3 + '" ' +
+                'suburb="' + $scope.order.rc_zone.title + '" ' +
+                'postcode="' + $scope.order.rc_zone.postcode + '" ' +
+                'contact="' + $scope.form.dcontact + '" ' +
+                'email="' + $scope.form.demail + '" ' +
+                'phone="' + $scope.form.dphone + '"/>' +
+            '</consignment>' +
+            '</cpl>'
+        }).success(function (response) {
+            $scope.response = response;
+            alert(response)
+        }).error(function (error) {
+            $scope.error = error;
+            alert(error)
+        });
+    };
+
 });
