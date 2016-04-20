@@ -13,7 +13,7 @@ orderApp.config(['$routeProvider' , '$locationProvider', '$httpProvider',
             })
 
             .when('/carrier-list', {
-                templateUrl: '../carrier_list.html',
+                templateUrl: '/pages/carrier_list.html',
                 controller: 'carrierListController'
             })
 
@@ -107,19 +107,19 @@ orderApp.service("order", function Order() {
         "sku_description": "0000",
         "length": 100.0,
         "width": 100.0,
-        "height": 100.0,
-        "weight": 10.0,
+        "height": 10.0,
+        "weight": 5.0,
         "status": "1",
         "sd_addr0": "10",
         "sd_addr1": "10",
         "sd_addr2": "10",
         "sd_addr3": "10",
         "sd_zone": {
-            "title": "Melbourne Metro",
+            "title": "KUNDA PARK",
             "state": null,
             "country": null,
-            "postcode": "3040",
-            "zone": "MEL"
+            "postcode": "4556",
+            "zone": "0000"
         },
         "sd_residence_type": "B",
         "rc_addr0": "10",
@@ -127,11 +127,11 @@ orderApp.service("order", function Order() {
         "rc_addr2": "10",
         "rc_addr3": "10",
         "rc_zone": {
-            "title": "Sydney Metro",
+            "title": "BIRTINYA",
             "state": null,
             "country": null,
-            "postcode": "2000",
-            "zone": "SYD"
+            "postcode": "4575",
+            "zone": "0000"
         },
         "rc_residence_type": "B",
         "shipping_type": "D",
@@ -139,12 +139,13 @@ orderApp.service("order", function Order() {
             "title": "Couriers Please",
             "cube": 250,
             "service": "EXPRESS",
-            "zone_from": "MEL",
-            "zone_from_postcode": "3040",
-            "zone_to": "SYD",
-            "zone_to_postcode": "2000"
+            "zone_from": "0000",
+            "zone_from_postcode": "4556",
+            "zone_to": "0000",
+            "zone_to_postcode": "4575"
         },
-        "price": 100.0
+        "price": 100.0,
+        "manifest": null
     }
 });
 
@@ -197,7 +198,7 @@ orderApp.controller('addOrderController', function($scope, order, $location, $ht
 
         $http({
             method: "GET",
-            url: 'http://localhost:8000/shipping/locality/?coutry=' + order.data.sd_zone.country +
+            url: 'http://localhost:8000/shipping/locality/?country=' + order.data.sd_zone.country +
             '&state=' + order.data.sd_zone.state +
             '&postcode=' + order.data.sd_zone.postcode +
             '&title=' + order.data.sd_zone.title
@@ -209,7 +210,7 @@ orderApp.controller('addOrderController', function($scope, order, $location, $ht
 
         $http({
             method: "GET",
-            url: 'http://localhost:8000/shipping/locality/?coutry=' + order.data.rc_zone.country +
+            url: 'http://localhost:8000/shipping/locality/?country=' + order.data.rc_zone.country +
             '&state=' + order.data.rc_zone.state +
             '&postcode=' + order.data.rc_zone.postcode +
             '&title=' + order.data.rc_zone.title
@@ -349,11 +350,43 @@ orderApp.controller("cpSpecificationController", function($scope, $http, order){
             '</cpl>'
         }).success(function (response) {
             $scope.response = response;
-            alert(response)
+            order.data.manifest = response.cpl.consignment.pdf["#text"];
+
+        }).error(function (error) {
+            $scope.error = error;
+            alert(error)
+        });
+
+        $scope.upload = order.data;
+
+        $http({
+            url: 'http://localhost:8000/shipping/order/',
+            method: 'POST',
+            data: $scope.upload
+        }).success(function (response) {
+            $scope.response = response;
+            alert('Order saved')
         }).error(function (error) {
             $scope.error = error;
             alert(error)
         });
     };
+    
+    $scope.getPDF = function(){
+        var pdf = order.data.manifest;
+        var winlogicalname = "pdf";
+        var winparams = 'dependent=yes,locationbar=no,scrollbars=yes,menubar=yes,'+
+            'resizable,screenX=50,screenY=50,width=850,height=1050';
 
+        var htmlText = '<embed width=100% height=100%'
+            + ' type="application/pdf"'
+            + ' src="data:application/pdf;base64,'
+            + escape(pdf)
+            + '"></embed>';
+
+        // Open PDF in new browser window
+        var detailWindow = window.open ("", winlogicalname, winparams);
+        detailWindow.document.write (htmlText);
+        detailWindow.document.close ();
+    }
 });

@@ -1,9 +1,5 @@
 <div class="container-fluid" ng ng-controller="selectCarrierController">
     <span><h2>Select Carrier</h2></span>
-    {{order}}
-    <br>
-    <br>
-    {{rates}}
     <div ng-if="rates.count > 0 && cubes <= rates.results[0].carrier_service.cube && cubic_weight <= rates.results[0].break1_end">
         <h3>You have {{ rates.count }} variants</h3>
         <div ng-if="cubic_weight <= rates.results[0].break1_end">

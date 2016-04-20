@@ -1,14 +1,9 @@
+
 <div class="container-fluid" ng-controller="cpSpecificationController">
 
     <span><h2>Order specification </h2></span>
     <br />
-    {{order}}
-    <br />
-    Response: {{response}}
-    <br />
-    Error: {{error}}
-    <br />
-    {{form.alt}}
+    {{upload}}
 
     <form role="form" novalidate class="form-horizontal">
         <div class="form-group">
@@ -191,8 +186,8 @@
             </div>
         </div>
 
-        <button type="submit" ng-click="save()" class="btn btn-default">Add New Order</button>
-
+        <button type="submit" ng-click="save()" class="btn btn-default">save</button>
+        <button type="submit" ng-click="getPDF()" class="btn btn-default">Get PDF</button>
     </form>
 
 </div>
