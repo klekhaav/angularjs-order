@@ -116,8 +116,8 @@ orderApp.service("order", function Order() {
         "sd_addr3": "10",
         "sd_zone": {
             "title": "KUNDA PARK",
-            "state": null,
-            "country": null,
+            "state": "-",
+            "country": "-",
             "postcode": "4556",
             "zone": "0000"
         },
@@ -128,8 +128,8 @@ orderApp.service("order", function Order() {
         "rc_addr3": "10",
         "rc_zone": {
             "title": "BIRTINYA",
-            "state": null,
-            "country": null,
+            "state": "-",
+            "country": "-",
             "postcode": "4575",
             "zone": "0000"
         },
@@ -145,7 +145,7 @@ orderApp.service("order", function Order() {
             "zone_to_postcode": "4575"
         },
         "price": 100.0,
-        "manifest": null
+        "manifest": "test pdf"
     }
 });
 
@@ -319,58 +319,56 @@ orderApp.controller("cpSpecificationController", function($scope, $http, order){
         $http({
             url: 'http://edi.couriersplease.com.au/api/consignment/',
             method: 'POST',
-            data:
-            '<cpl key="' + key + '" ' + 'output="json">' +
+            data: '<cpl key="' + key + '" ' + 'output="json">' +
             '<consignment items="' + items + '" ' +
-                'weight="' + $scope.order.weight + '" ' +
-                'volume="' + volume + '" ' +
-                'pricecode="' + $scope.form.pricecode + '" ' +
-                'labels="' + $scope.form.labels + '" ' +
-                'atl="' + $scope.form.alt + '" >' +
+            'weight="' + $scope.order.weight + '" ' +
+            'volume="' + volume + '" ' +
+            'pricecode="' + $scope.form.pricecode + '" ' +
+            'labels="' + $scope.form.labels + '" ' +
+            'atl="' + $scope.form.alt + '" >' +
             '<reference reference="' + $scope.form.reference + '"/>' +
             '<pickup addr0="' + $scope.form.paddr0 + '" ' +
-                'addr1="' + $scope.form.paddr1 + '" ' +
-                'addr2="' + $scope.form.paddr2 + '" ' +
-                'addr3="' + $scope.form.paddr3 + '" ' +
-                'suburb="' + $scope.order.sd_zone.title + '" ' +
-                'postcode="' + $scope.order.sd_zone.postcode + '" ' +
-                'contact="' + $scope.form.pcontact + '" ' +
-                'email="' + $scope.form.pemail + '" ' +
-                'phone="' + $scope.form.pphone + '"/>' +
+            'addr1="' + $scope.form.paddr1 + '" ' +
+            'addr2="' + $scope.form.paddr2 + '" ' +
+            'addr3="' + $scope.form.paddr3 + '" ' +
+            'suburb="' + $scope.order.sd_zone.title + '" ' +
+            'postcode="' + $scope.order.sd_zone.postcode + '" ' +
+            'contact="' + $scope.form.pcontact + '" ' +
+            'email="' + $scope.form.pemail + '" ' +
+            'phone="' + $scope.form.pphone + '"/>' +
             '<delivery addr0="' + $scope.form.daddr0 + '" ' +
-                'addr1="' + $scope.form.daddr1 + '" ' +
-                'addr2="' + $scope.form.daddr2 + '" ' +
-                'addr3="' + $scope.form.daddr3 + '" ' +
-                'suburb="' + $scope.order.rc_zone.title + '" ' +
-                'postcode="' + $scope.order.rc_zone.postcode + '" ' +
-                'contact="' + $scope.form.dcontact + '" ' +
-                'email="' + $scope.form.demail + '" ' +
-                'phone="' + $scope.form.dphone + '"/>' +
+            'addr1="' + $scope.form.daddr1 + '" ' +
+            'addr2="' + $scope.form.daddr2 + '" ' +
+            'addr3="' + $scope.form.daddr3 + '" ' +
+            'suburb="' + $scope.order.rc_zone.title + '" ' +
+            'postcode="' + $scope.order.rc_zone.postcode + '" ' +
+            'contact="' + $scope.form.dcontact + '" ' +
+            'email="' + $scope.form.demail + '" ' +
+            'phone="' + $scope.form.dphone + '"/>' +
             '</consignment>' +
             '</cpl>'
         }).success(function (response) {
             $scope.response = response;
             order.data.manifest = response.cpl.consignment.pdf["#text"];
+            $scope.upload = order.data;
 
-        }).error(function (error) {
-            $scope.error = error;
-            alert(error)
-        });
-
-        $scope.upload = order.data;
-
-        $http({
-            url: 'http://localhost:8000/shipping/order/',
-            method: 'POST',
-            data: $scope.upload
-        }).success(function (response) {
-            $scope.response = response;
-            alert('Order saved')
+            $http({
+                url: 'http://localhost:8000/shipping/order/',
+                method: 'POST',
+                data: $scope.upload
+            }).success(function (response) {
+                $scope.response = response;
+                alert('Order saved')
+            }).error(function (error) {
+                $scope.error = error;
+                alert(error)
+            });
         }).error(function (error) {
             $scope.error = error;
             alert(error)
         });
     };
+        
     
     $scope.getPDF = function(){
         var pdf = order.data.manifest;
