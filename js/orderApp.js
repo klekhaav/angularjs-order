@@ -278,9 +278,10 @@ orderApp.controller('selectCarrierController', function ($scope, order, $http, $
         order.data.carrier_service.zone_to_postcode = carrier.carrier_service.zone_to_postcode;
         order.data.price = carrier.price;
 
-        if (order.data.carrier_service.title == "Couriers Please"){
-            $location.path('/cp-form');
-        } else $location.path('/payment-selector');
+        // if (order.data.carrier_service.title == "Couriers Please"){
+        //     $location.path('/cp-form');
+        // } else 
+            $location.path('/payment-selector');
 
     };
 });

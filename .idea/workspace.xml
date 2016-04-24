@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ad183ed-632d-421a-ac7f-3d4ad32b2384" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb_test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/orderApp.js" afterPath="$PROJECT_DIR$/js/orderApp.js" />
     </list>
@@ -29,6 +30,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="612">
               <caret line="34" column="27" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/order_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -67,8 +78,8 @@
       <file leaf-file-name="cp_form.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cp_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="192" selection-end-column="6" />
+            <state relative-caret-position="3384">
+              <caret line="188" column="47" selection-start-line="188" selection-start-column="30" selection-end-line="188" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#h4#0;n#div#0;n#div#3;n#form#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h4#0;n#div#0;n#div#4;n#form#0;n#div#0;n#!!top" expanded="true" />
@@ -78,17 +89,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="orderApp.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="orderApp.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/orderApp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3238">
-              <caret line="144" column="38" selection-start-line="144" selection-start-column="38" selection-end-line="144" selection-end-column="38" />
+            <state relative-caret-position="1440">
+              <caret line="80" column="30" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
               <folding>
                 <element signature="e#4556#4603#0" expanded="false" />
                 <element signature="e#4682#4783#0" expanded="false" />
                 <element signature="e#5037#5135#0" expanded="false" />
-                <marker date="1461160118798" expanded="true" signature="14447:14574" placeholder="..." />
+                <marker date="1461246057998" expanded="true" signature="14428:14555" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fb_test.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fb_test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,6 +163,8 @@
         <option value="$PROJECT_DIR$/cp_form.html" />
         <option value="$PROJECT_DIR$/select-carrier.html" />
         <option value="$PROJECT_DIR$/js/orderApp.js" />
+        <option value="$PROJECT_DIR$/facebook_sdk.html" />
+        <option value="$PROJECT_DIR$/fb_test.html" />
       </list>
     </option>
   </component>
@@ -155,9 +178,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="984" />
+    <option name="x" value="670" />
     <option name="y" value="52" />
-    <option name="width" value="935" />
+    <option name="width" value="1239" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -185,11 +208,42 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -428,20 +482,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.cp_form.html">
-    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/angularjs/index.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.fb_test.html">
     <configuration default="false" name="index.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/angularjs/index.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="carrier_list.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/angularjs/pages/carrier_list.html">
       <method />
     </configuration>
     <configuration default="false" name="rates_list.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/angularjs/rates_list.html">
       <method />
     </configuration>
     <configuration default="false" name="cp_form.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/angularjs/cp_form.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="facebook_sdk.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/angularjs/facebook_sdk.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="fb_test.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/angularjs/fb_test.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -498,19 +552,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.carrier_list.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.rates_list.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.cp_form.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.rates_list.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.cp_form.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.facebook_sdk.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.fb_test.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.cp_form.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.rates_list.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.carrier_list.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.fb_test.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.facebook_sdk.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.cp_form.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.rates_list.html" />
       </list>
     </recent_temporary>
   </component>
@@ -541,24 +595,38 @@
       <workItem from="1461146532965" duration="1593000" />
       <workItem from="1461156637008" duration="1295000" />
       <workItem from="1461158493684" duration="1839000" />
+      <workItem from="1461160626687" duration="803000" />
+      <workItem from="1461195493267" duration="599000" />
+      <workItem from="1461197316286" duration="599000" />
+      <workItem from="1461228088969" duration="599000" />
+      <workItem from="1461231182822" duration="913000" />
+      <workItem from="1461243422426" duration="997000" />
+      <workItem from="1461245936728" duration="121000" />
+      <workItem from="1461246093814" duration="911000" />
+      <workItem from="1461267263107" duration="511000" />
+      <workItem from="1461270471186" duration="310000" />
+      <workItem from="1461396797276" duration="635000" />
+      <workItem from="1461401019846" duration="209000" />
+      <workItem from="1461479010746" duration="1307000" />
+      <workItem from="1461482910636" duration="338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270525000" />
+    <option name="totallyTimeSpent" value="279377000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="984" y="52" width="935" height="1028" extended-state="4" />
-    <editor active="false" />
+    <frame x="670" y="52" width="1239" height="1028" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28208956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19865884" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15265487" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15296803" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -616,21 +684,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rates_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="51" column="38" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/add_order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="48" column="50" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/select-carrier.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -647,7 +700,7 @@
             <element signature="e#4556#4603#0" expanded="false" />
             <element signature="e#4682#4783#0" expanded="false" />
             <element signature="e#5037#5135#0" expanded="false" />
-            <marker date="1461160118798" expanded="true" signature="14447:14574" placeholder="..." />
+            <marker date="1461246057998" expanded="true" signature="14428:14555" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -671,7 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -679,7 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
           <caret line="51" column="38" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -706,7 +757,7 @@
             <element signature="e#4556#4603#0" expanded="false" />
             <element signature="e#4682#4783#0" expanded="false" />
             <element signature="e#5037#5135#0" expanded="false" />
-            <marker date="1461160118798" expanded="true" signature="14447:14574" placeholder="..." />
+            <marker date="1461246057998" expanded="true" signature="14428:14555" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -733,7 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -741,7 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,7 +817,7 @@
             <element signature="e#4556#4603#0" expanded="false" />
             <element signature="e#4682#4783#0" expanded="false" />
             <element signature="e#5037#5135#0" expanded="false" />
-            <marker date="1461160118798" expanded="true" signature="14447:14574" placeholder="..." />
+            <marker date="1461246057998" expanded="true" signature="14428:14555" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -827,7 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -862,13 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/order_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/carrier_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -891,10 +932,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/order_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cp_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="192" selection-end-column="6" />
+        <state relative-caret-position="3384">
+          <caret line="188" column="47" selection-start-line="188" selection-start-column="30" selection-end-line="188" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#h4#0;n#div#0;n#div#3;n#form#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#div#0;n#div#4;n#form#0;n#div#0;n#!!top" expanded="true" />
@@ -903,16 +952,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/facebook_sdk.html" />
     <entry file="file://$PROJECT_DIR$/js/orderApp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3238">
-          <caret line="144" column="38" selection-start-line="144" selection-start-column="38" selection-end-line="144" selection-end-column="38" />
+        <state relative-caret-position="1440">
+          <caret line="80" column="30" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
           <folding>
             <element signature="e#4556#4603#0" expanded="false" />
             <element signature="e#4682#4783#0" expanded="false" />
             <element signature="e#5037#5135#0" expanded="false" />
-            <marker date="1461160118798" expanded="true" signature="14447:14574" placeholder="..." />
+            <marker date="1461246057998" expanded="true" signature="14428:14555" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
